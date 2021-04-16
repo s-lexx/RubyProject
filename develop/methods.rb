@@ -24,15 +24,14 @@ def check_input(user_input, letters, good_letters, bad_letters) # проверк
     (user_input == 'и' && letters.include?('й')) ||
     (user_input == 'й' && letters.include?('и'))
      
-    good_letters << #user_input
+    good_letters <<
       case user_input
       when 'е'; 'ё'
       when 'ё'; 'е'
       when 'и'; 'й'
       when 'й'; 'и'
-      #else user_input
       end
-      
+
     good_letters << user_input
 
     (letters - good_letters).empty? ? 1 : 0
