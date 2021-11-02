@@ -29,10 +29,13 @@ def check_result(user_input, letters, good_letters, bad_letters) # провер�
 end 
 
 def get_word_for_print(letters, good_letters) #прорисовка прогресса угадывания слова
+  
   result = ''
+
   letters.each { |letters| result += good_letters.include?(letters) ? letters + ' ' : '__' }
   
   result
+  
 end
 
 def print_status(letters, good_letters, bad_letters, errors)

@@ -22,7 +22,7 @@ while errors < 7 do  #основной блок
   	errors += 1
   elsif (result == 1)
     break		
-  end  	
+  end
 end
 
 print_status(letters, good_letters, bad_letters, errors) # вывод результата игры
